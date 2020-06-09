@@ -9,7 +9,7 @@ node{
 	}
 
 	stage('Test image') {
-    		docker.image('ouhamza/nginx').withRun('-p 80:80') { c ->
+    		docker.image('ouhamza/nginx').withRun('-p 88:80') { c ->
     		sh 'docker ps'
     		sh 'curl localhost'
      		}
